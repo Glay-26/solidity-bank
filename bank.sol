@@ -60,13 +60,11 @@ contract SimpleBank {
         
         uint256 amount = address(this).balance;
         require(amount > 0, "No ETH to withdraw");
-
-        // 将合约内所有的 ETH 转给管理员
-        payable(admin).transfer(amount);
-    }
-
-    // 回退函数：如果用户直接往合约地址转账，也会触发 deposit
-    receive() external payable {
-        deposit();
+    
+        // 使用 call 代替 transfer
+        (bool success, ) = payable(admin).call{value: amount}("");
+        
+        // 如果转账不成功，直接报错回滚
+        require(success, "ETH Transfer Failed"); 
     }
 }

@@ -74,10 +74,6 @@
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
-			},
-			{
-				"stateMutability": "payable",
-				"type": "receive"
 			}
 		],
 		"devdoc": {
@@ -108,11 +104,11 @@
 	},
 	"sources": {
 		"bank.sol": {
-			"keccak256": "0xe0b612a0d0f778ec34a93d2e3d440b09d85c1a2f5ecd8f0294592c3723299996",
+			"keccak256": "0xd3b4b3047570d1b2715f5199586fb2ca0bb73b73da16781c004f8ddcfc16d499",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://2747dc3057442b6d8a7a3301b43da76a9de9e5e2782c65babcb1ff2884f0a5eb",
-				"dweb:/ipfs/QmPJRNpfQnuR2McQ2v7bWpNGQpuXJBkL5j5NQbGkduRRX8"
+				"bzz-raw://2a5f5adf4efc1665e6ad926f885c98bd8a383c6a0e091d851fc77c846c3ff314",
+				"dweb:/ipfs/QmcsECnDRz8BmN9LBUk8RRg3PSYcc83sAHnE4L1cAg8DKj"
 			]
 		}
 	},
