@@ -117,8 +117,11 @@ contract Admin {
         bank.withdraw();
     }
 
-    // Admin 合约需要能接收 ETH
+    // Admin 合约需要能接收 ETH - receive 函数
     receive() external payable {}
+
+    // fallback 函数，处理其他情况
+    fallback() external payable {}
 
     // 查询 Admin 合约余额
     function getBalance() public view returns (uint256) {
